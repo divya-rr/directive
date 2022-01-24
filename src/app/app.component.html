@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn-primary" (click)="onToggleDetails()">Display Details</button>
+      <p *ngIf="secretPassword">Secret password=true</p>
+      <div *ngFor= "let items of list" [ngStyle]='{backgroundColor:items>=5?"blue":"transparent"}' [ngClass]="{'white-text':items>=5}">{{items}}</div>
+    </div>
+  </div>
+</div>
